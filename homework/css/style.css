@@ -1,438 +1,118 @@
-/* Colors used in design. 
-* primary: #0078aa;
-* dark: #363636;
-* light: #fff;
-*/
-
-html{
-  scroll-behavior: smooth;
-}
- body {
-  font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding-top: 60px;
 }
 
-.top-link {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background-color: #0078aa;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-}
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+.main-nav {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 10;
-  width: 95%;
+  width: 100%;
   background-color: #fff;
-}
-
-#logo {
-  height: 40px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #0078aa;
-}
-
-.hero {
-  background-image: url("/img/lady.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 50px;
-}
-
-.hero-content {
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.icons {
-display: flex;
-gap: 15px;
-}
-    
-.icon-button {
-width: 60px;
-height: 60px;
-border: none;
-border-radius: 50%;
-background-color: #0078aa;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-transition: 0.3s;
-}
-    
-.icon-button img {
-width: 30px;
-height: 30px;
-filter: brightness(0) invert(1);
-transition: filter 0.3s ease, background-color 0.3s ease;
-}
-    
-.icon-button:hover {
-  color: #0078aa;
-   background-color: #fff;
-}
-
-.icon-button:hover img {
-  filter: brightness(0) invert(1) sepia(1) hue-rotate(160deg) saturate(20);
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 50px;
-}
-
-.tools-image {
-  max-width: 45%;
-  height: auto;
-}
-
-.about-content {
-  max-width: 50%;
-}
-
-.about h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.about p {
-  font-size: 18px;
-  color: #666;
-}
-
-.about article {
-  margin-top: 20px;
-}
-
-.about article h3 {
-  font-size: 20px;
-  font-weight: bold;
-  position: relative;
-  padding-left: 25px;
-}
-
-.about article h3::before {
-  content: "↠";
-  left: 0;
-  color: #00A5CF;
-  font-size: 24px;
-}
-
-
-.help {
-  text-align: center;
-  padding: 100px 50px;
-  background-image: url(/img/services_bg.jpg);
-}
-
-.help h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.help p {
-  font-size: 18px;
-  color: #00A5CF;
-  margin-bottom: 40px;
-}
-
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
-.service-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.service-card img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.service-card h3 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.service-card p {
-  font-size: 16px;
+.main-nav a {
   color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.pricing {
-  text-align: center;
-  background-image: url(/img/pricing_bg.jpg);
-  image-rendering: auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 50px 20px;
+.main-nav a:hover {
+  color: #007BFF;
+  text-decoration: underline;
 }
 
-.pricing h2 {
-  font-size: 2rem;
+.logo {
+  font-size: 1.5rem;
+  color: #007BFF;
 }
 
-.pricing p {
-  font-size: 1rem;
-  padding-bottom: 30px;
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-
-.cards {
+form {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-
+  flex-direction: column;
+  gap: 1rem;
 }
 
-
-.pricing-card {
-  background-color: #0078aa;
-  padding: 30px;
-  width: 300px;
-  color: #fff;
-  text-align: center;
-
-}
-
-.pricing-card .cross {
-  color: #fff;
-  font-size: 18px;
-}
-
-.pricing-card.featured {
-  background-color: #fff;
-  color: #0078aa;
-  border: 1px solid #0078aa;
-  transform: scale(1.1);
-}
-
-.pricing-card.featured .cross {
-  color: currentColor;
-}
-
-.price span {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.price_featured span {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-ul {
-  text-align: center;
-  padding-left: 0;
-}
-
-li {
-  list-style-type: none;
-  text-align: center;
-  padding: 5px 10px;
-  margin: 15px auto;
-  font-size: 12px;
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
 }
 
 button {
-  background: #fff;
-  border: 1px solid #0078aa;
-  color: #0078aa;
-  padding: 5px 10px;
-  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 15px;
 }
 
 button:hover {
-  background: #0078aa;
-  color: #fff;
-}
-
-.appointment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  background: url('background.png') center/cover no-repeat;
-}
-
-.appointment-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.appointment-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.appointment-form {
-  max-width: 500px;
-  width: 100%;
-  background: #fff;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.appointment-form h2 {
-  font-size: 24px;
-}
-
-.appointment-form p {
-  font-size: 15px;
-}
-
-.appointment-form input,
-.appointment-form select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px #ddd;
-  border-bottom: 1px solid lightgray
-}
-
-.appointment-form button {
-  width: 20%;
-  padding: 10px;
-  background: #0078aa;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.appointment-form button:hover {
-  background-color: #fff;
-  color: #0078aa;
-  border: solid #0078aa;
-  opacity: 0.8;
+  background-color: #0056b3;
 }
 
 footer {
   text-align: center;
-  color: #fff;
-  background-color: #363636;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  position: relative;
 }
 
-/* Для планшетов */
-@media (max-width: 1024px) {
-  #header {
-    padding: 15px;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-
-  .service-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .pricing-card {
-    width: 250px;
-  }
-
-  .appointment-form {
-    width: 80%;
-  }
-
-  .appointment-content {
-    flex-direction: column;
-    align-items: center;
-  }
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-/* Для мобильных телефонов */
+.up-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+
 @media (max-width: 767px) {
-  #header {
-    padding: 10px;
-  }
-
-  .hero {
-    padding: 50px 10px;
-  }
-
-  .service-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-card {
-    width: 100%;
-  }
-
-  .appointment-form {
-    width: 90%;
-  }
-
-  .appointment-content {
+  .main-nav {
     flex-direction: column;
+    gap: 0.5rem;
     align-items: center;
   }
 
-  .appointment-form button {
-    width: 50%;
+  section {
+    padding: 40px 15px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  section {
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    padding: 70px 100px;
   }
 }
