@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FE_HW1 - Responsive Site</title>
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-  <title>Responsive</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-  <!-- Your code here! Good luck! -->
+
+  <header>
+    <nav class="main-nav">
+      <a href="#top" class="logo">LOGO</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>Details about services...</p>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>Details about pricing...</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="date">Choose a date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="service">Choose a service:</label>
+        <input list="services" id="service" name="service" />
+        <datalist id="services">
+          <option value="Cardiology" />
+          <option value="Dentistry" />
+          <option value="Radiology" />
+          <option value="Pediatrics" />
+        </datalist>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <button class="up-btn" onclick="location.href='#top'"><i class="fas fa-arrow-up"></i></button>
+    <p>© 2025 Medical Company</p>
+  </footer>
+
 </body>
 </html>
