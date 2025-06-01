@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.spinner {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.user button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.user button:hover {
+  background-color: #f0f0f0;
+}
