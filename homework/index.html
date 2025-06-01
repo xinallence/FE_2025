@@ -7,9 +7,16 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <h1>Users</h1>
-  <div id="spinner" class="spinner">Loading...</div>
-  <div id="user-list"></div>
+  <main>
+    <header>
+      <h1>User Management</h1>
+    </header>
+
+    <section>
+      <div id="spinner" class="spinner" role="status" aria-live="polite">Loading...</div>
+      <div id="user-list" aria-label="User list" role="list"></div>
+    </section>
+  </main>
 
   <script src="js/index.js"></script>
 </body>
