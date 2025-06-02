@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>User List</title>
+  <title>AJAX</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <main>
-    <header>
-      <h1>User Management</h1>
-    </header>
-
-    <section>
-      <div id="spinner" class="spinner" role="status" aria-live="polite">Loading...</div>
-      <div id="user-list" aria-label="User list" role="list"></div>
-    </section>
-  </main>
-
-  <script src="js/index.js"></script>
+  <div class="container">
+    <div id="spinner" class="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+    <div id="userList"></div>
+  </div>
+  <script src="./js/index.js" type="module"></script>
 </body>
 </html>
