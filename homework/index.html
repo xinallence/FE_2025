@@ -1,18 +1,19 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AJAX</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <div class="container">
-    <div id="spinner" class="spinner-wrapper">
-      <div class="spinner"></div>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User List</h1>
+      <div class="spinner-wrapper">
+        <div class="spinner" role="status" aria-label="Завантаження"></div>
+      </div>
+      <div id="userList"></div>
     </div>
-    <div id="userList"></div>
-  </div>
-  <script src="./js/index.js" type="module"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
